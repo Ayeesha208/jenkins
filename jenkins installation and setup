@@ -1,0 +1,17 @@
+ create one Ec2 instance according your requirments
+ execute the all the below scripts in the instance terminal
+
+STEP 1:
+#Install Jenkins Using Below script
+        sudo apt-get update -y
+        sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+            https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+        echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+            https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+            /etc/apt/sources.list.d/jenkins.list > /dev/null
+        sudo apt-get update
+        sudo apt-get install fontconfig openjdk-17-jre
+        sudo apt-get install jenkins -y
+
+STEP 2:
+-> Enable the inbound rules of EC2 instance,in the instances security group by giving port number 8080

@@ -15,3 +15,34 @@ STEP 1:
 
 STEP 2:
 -> Enable the inbound rules of EC2 instance,in the instances security group by giving port number 8080
+-> paste the public ip of ec2 intance with port number in new tab to access the jenkins,<publicip:8080>
+-> in the jenkins tab you will get a path, copy & paste that path in EC2 terminal to get password
+
+     sudo cat <path which you got in jenkins tab>
+
+->you will the jenkins password after pasting this, paste this in jenkins and create the admin credentials by giving Username and password and start the jenkins
+->click on download the available plugins 
+
+STEP 3 :
+ Plugin Installation :
+-> We have to install the below plugins according the project requirments
+
+         -> EclipseTemurin
+         -> Docker
+         -> Docker pipeline
+         -> SonarQube scanner
+         -> SonarQube Quality gate
+         -> Quality gate
+         -> Nodejs
+         -> OWASP Dependency-Check
+         -> Email-extension plugin
+         -> Kubernetes
+         -> Kuberntes Client API
+         -> Kubernetes Credentials plugin
+         -> Kubernetes CLI
+         -> Kubernetes Credentials Provider
+         -> Kubernetes plugin
+         -> AWS Steps
+         -> AWS Credentials
+         -> Bitbucket
+

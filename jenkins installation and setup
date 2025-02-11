@@ -26,17 +26,17 @@ STEP 2:
 STEP 3 :
  Plugin Installation :
 -> We have to install the below plugins according the project requirments
-click on manage jenkins -> pluugins -> login with admin credentials ->
+click on manage jenkins -> plugins -> login with admin credentials -> Available plugins ->search  for required plugins and install
 
          -> EclipseTemurin
          -> Docker
          -> Docker pipeline
          -> SonarQube scanner
-         -> SonarQube Quality gate
+         -> Sonar Quality gate
          -> Quality gate
          -> Nodejs
          -> OWASP Dependency-Check
-         -> Email-extension plugin
+         -> Email extension template
          -> Kubernetes
          -> Kuberntes Client API
          -> Kubernetes Credentials plugin
@@ -47,3 +47,6 @@ click on manage jenkins -> pluugins -> login with admin credentials ->
          -> AWS Credentials
          -> Bitbucket
 
+Restart Jenkins when installation is complete and no jobs are running (enable this option)
+
+STEP 4 :Go to manage Jenkins, click credentials and cofigure below credentials

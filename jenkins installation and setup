@@ -26,6 +26,7 @@ STEP 2:
 STEP 3 :
  Plugin Installation :
 -> We have to install the below plugins according the project requirments
+click on manage jenkins -> pluugins -> login with admin credentials ->
 
          -> EclipseTemurin
          -> Docker

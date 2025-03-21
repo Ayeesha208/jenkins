@@ -12,6 +12,17 @@ STEP 1:
         sudo apt-get update
         sudo apt-get install fontconfig openjdk-17-jre
         sudo apt-get install jenkins -y
+        sudo systemctl start jenkins
+        sudo systemctl enable jenkins
+        sudo systemctl status jenkins
+
+-> Later you will install docker using below commands
+        sudo apt update
+        sudo apt install docker.io
+        sudo su - 
+        usermod -aG docker jenkins
+        usermod -aG docker ubuntu
+        systemctl restart docker
 
 STEP 2:
 -> Enable the inbound rules of EC2 instance,in the instances security group by giving port number 8080
